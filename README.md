@@ -1,10 +1,13 @@
 # dvc-hello-world
 This is a simple "Hello World" project for DVC. In this spirit, this project contains the necessary python scripts to 
-train a Convolutional Network, to classify digits of the classic MNIST image dataset. This is: (i) training and testing 
-datasets, (ii) some python scripts an (iii) a trained model.
+train a Convolutional Network, to classify digits of the classic MNIST image dataset. This is: 
+
+* Training and testing datasets 
+* A set of python scripts 
+* A specific folder to store trained model (eventually containing an already pre-trained baseline model)
 
 Although it seems simple, this set of files represents the assets we have in a Machine Learning project 99% of the time, 
-and it will be the scenario that will allow us to introduce DVC
+and it will be the scenario that will allow us to introduce DVC.
 
 The project is organized as follows:
 
@@ -52,7 +55,7 @@ As an example, these are how remote storage would look in two of the top cloud p
 $ dvc remote add -d storage [MY_STORAGE_ADDRESS_URL]
 ```
 
-3. Initialization: Run following command from project root, to initialize DVC
+3. Initialization: Run following command from project root, to initialize DVC.
 ```shell
 $ dvc init
 ```
@@ -90,7 +93,7 @@ $ dvc add data
 
 DVC stores information about the added file in a special .dvc file named data.dvc — a small text file with a 
 human-readable format. This metadata file is a placeholder for the original data, and can be easily versioned like 
-source code with Git
+source code with Git.
 
 ```shell
 $ git add data.dvc data/ .gitignore
@@ -98,7 +101,7 @@ $ git commit -m "Add raw data into DVC"
 $ git push
 ```
 
-5. Upload changes in remote storage
+5. Upload changes in remote storage:
 ```shell
 $ dvc push 
 ```
