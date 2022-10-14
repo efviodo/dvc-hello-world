@@ -37,6 +37,13 @@ images to test the model. Read section **About MNIST** for more details.
 
 **requirements.txt**: Project dependencies
 
+## What is DVC?
+
+DVC is an open-source Version Control System for Machine Learning Projects, built to make ML models shareable and 
+reproducible. It is designed to handle large files, data sets, machine learning models, and metrics as well as code.
+
+Read more about DVC [here](https://dvc.org/doc).
+
 ## DVC: Step-by-step
 
 In this section, we will integrate DVC into this project, step-by-step.
